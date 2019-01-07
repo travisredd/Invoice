@@ -1,0 +1,31 @@
+﻿<Window x:Class="Invoice.wndMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Invoice"
+        mc:Ignorable="d"
+        Title="wndMain" Height="350" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="237*"/>
+            <ColumnDefinition Width="280*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Name="invoiceId_txtbox" HorizontalAlignment="Left" Height="23" Margin="125,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="invoiceId_txtbox_Copy" HorizontalAlignment="Left" Height="23" Margin="10,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="invoiceId_txtbox_Copy1" HorizontalAlignment="Left" Height="23" Margin="243,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Label Content="invoiceId:" HorizontalAlignment="Left" Margin="65,32,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.385,-0.392"/>
+        <Label Content="invoiceDate:" HorizontalAlignment="Left" Margin="298,32,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.553,-0.094" Grid.ColumnSpan="2"/>
+        <Label Content="invoiceCost:" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="170,32,0,0"/>
+        <GroupBox Name="items_grpbox" Header="Items" HorizontalAlignment="Left" Height="225" Margin="10,74,0,0" VerticalAlignment="Top" Width="405" Grid.ColumnSpan="2">
+            <DataGrid HorizontalAlignment="Left" Height="193" Margin="0,10,-2,0" VerticalAlignment="Top" Width="395"/>
+        </GroupBox>
+        <GroupBox Name="invoiceInfo_grpbox" Header="Invoice Info" HorizontalAlignment="Left" Height="59" Margin="15,10,0,0" VerticalAlignment="Top" Width="730" Grid.ColumnSpan="2"/>
+        <Button Name="newInvoice_btn" Content="Edit Invoice" Grid.Column="1" HorizontalAlignment="Left" Margin="328,107,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Name="editInvoice_btn" Content="New Invoice" Grid.Column="1" HorizontalAlignment="Left" Margin="328,82,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Name="addItem_btn" Content="Add Item" Grid.Column="1" HorizontalAlignment="Left" Margin="57,243,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Name="deleteItem_btn" Content="Delete Item" Grid.Column="1" HorizontalAlignment="Left" Margin="57,268,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Name="Search" Content="Search" Grid.Column="1" HorizontalAlignment="Left" Margin="328,289,0,0" VerticalAlignment="Top" Width="75" Click="Search_Click"/>
+
+    </Grid>
+</Window>
