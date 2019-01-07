@@ -31,7 +31,7 @@
         <Button Name="newInvoice_btn" Content="New Invoice" HorizontalAlignment="Left" Margin="49,63,0,0" VerticalAlignment="Top" Width="441" Grid.ColumnSpan="2" Click="NewInvoice_btn_Click"/>
         <Button Name="addItem_btn" Content="Add Item" Grid.Column="1" HorizontalAlignment="Left" Margin="179,133,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="2.459,-1.092"/>
         <Button Name="deleteItem_btn" Content="Delete Item" HorizontalAlignment="Left" Margin="49,269,0,0" VerticalAlignment="Top" Width="251" Grid.ColumnSpan="2"/>
-        <Button Name="Search" Content="TEST SEARCH BUTTON" HorizontalAlignment="Left" Margin="177,97,0,0" VerticalAlignment="Top" Width="174" Click="Search_Click" RenderTransformOrigin="0.948,0.714" Height="15" Grid.ColumnSpan="2"/>
+        <Button Name="Search" Content="TEST SEARCH BUTTON" HorizontalAlignment="Left" Margin="177,97,0,0" VerticalAlignment="Top" Width="174" Click="Search_Click" RenderTransformOrigin="0.948,0.714" Height="15" Grid.ColumnSpan="2" FontWeight="Bold"/>
         <Button x:Name="editInvoice_btn" Content="Edit Invoice" HorizontalAlignment="Left" Margin="18,63,0,0" VerticalAlignment="Top" Width="224" Grid.Column="1" Click="EditInvoice_btn_Click"/>
         <Button x:Name="saveInvoice_btn" Content="Save Invoice" HorizontalAlignment="Left" Margin="49,63,0,0" VerticalAlignment="Top" Width="441" Grid.ColumnSpan="2" Click="SaveInvoice_btn_Click"/>
 
